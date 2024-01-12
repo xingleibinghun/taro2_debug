@@ -1,0 +1,18 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <template is="renderClosureCustom" data="{{...anonymousState__temp}}"></template>
+    </view>
+</block>
+<template name="renderClosureCustom">
+    <block>
+        <block wx:if="{{isA}}">
+            <view>A</view>
+        </block>
+        <block wx:elif="{{isC}}">
+            <view>C</view>
+        </block>
+        <block wx:elif="{{isB}}">
+            <view>D</view>
+        </block>
+    </block>
+</template>
